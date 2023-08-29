@@ -59,7 +59,6 @@ const App = () => {
                 <option value="desc">Descending</option>
             </select>
             {advancedSortedBooks.map(book => (
-                // ... (rest of the book rendering remains unchanged)
             ))}
             <button onClick={loadMoreBooks}>Load More</button>
         </div>
