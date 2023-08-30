@@ -1,0 +1,33 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("../assets/Screenshot_20230831_021019_Samsung Internet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.book-item, .book-details {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.book-item img, .book-details img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .book-item, .book-details {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .book-item img, .book-details img {
+        margin-right: 10px;
+    }
+}

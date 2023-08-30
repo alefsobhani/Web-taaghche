@@ -1,12 +1,9 @@
-const reportWebVitals = onPerfEntry => {
+
+import { reportWebVitals as reportWebVitalsBase } from 'react-dom';
+
+const reportWebVitals = (onPerfEntry) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
+    reportWebVitalsBase(onPerfEntry);
   }
 };
 
