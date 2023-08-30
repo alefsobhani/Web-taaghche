@@ -1,88 +1,73 @@
-
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import BookItem from './BookItem';
-import Filters from './Filters';
+import { Link } from 'react-router-dom';
 
-function BookList() {
-  const [books, setBooks] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState('');
-  const [sort, setSort] = useState('rating');
+const BookList = ({ books }) => {
+    const [filteredBooks, setFilteredBooks] = useState(books);
+    const [sortType, setSortType] = useState(null);
+    const [filterPublisher, setFilterPublisher] = useState('');
 
-  useEffect(() => {
-    axios.get('https://api.example.com/books')  // This should be the real API endpoint
-      .then(response => {
-        setBooks(response.data);
-        setLoading(false);
-      })
-      .catch(error => console.error(error));
-  }, []);
+    useEffect(() => {
+        let tempBooks = [...books];
 
-  const filteredBooks = books
-    .filter(book => book.publisher.includes(filter))
-    .sort((a, b) => {
-      if (sort === 'rating') {
-        return b.rating - a.rating;
-      } else {
-        return a.price - b.price;
-      }
-    });
-
-  if (loading) return <div className="child_childBox__I9yMt child_title__19SEz child_link__19Afq child_item__1sVuh child_childBox__I9yMt">Loading...</div>;
-
-  useEffect(() => {
-        // Simulate checking for connectivity
-        const isConnected = navigator.onLine;
-        dispatch(setConnectivity(isConnected));
-
-        if (!isConnected) {
-            dispatch(setError("No internet connection."));
-            dispatch(setLoading(false));
-        } else {
-            // TODO: Fetch the data from the API and update the state
-            // For now, we'll simulate an API call with a timeout
-            dispatch(setLoading(true));
-            setTimeout(() => {
-                // Simulate success
-                dispatch(setLoading(false));
-                // Set books data
-            }, 2000);
+        if (filterPublisher) {
+            tempBooks = tempBooks.filter(book => book.publisher === filterPublisher);
         }
-    }, [dispatch]);
 
-    if (loading) {
-        return <div className="child_childBox__I9yMt child_title__19SEz child_link__19Afq child_item__1sVuh child_childBox__I9yMt">Loading...</div>;
+        if (sortType === 'rating') {
+            tempBooks.sort((a, b) => b.rating - a.rating);
+        } else if (sortType === 'price') {
+            tempBooks.sort((a, b) => a.price - b.price);
+        }
+
+        setFilteredBooks(tempBooks);
+    }, [books, sortType, filterPublisher]);
+
+    const handleScroll = () => {
+        if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
+        // Add logic here to fetch more books
     }
 
-    if (error) {
-        return <div className="child_childBox__I9yMt child_title__19SEz child_link__19Afq child_item__1sVuh child_childBox__I9yMt">Error: {error}</div>;
-    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
-    
-    let filteredBooks = books;
-    if (filter) {
-        filteredBooks = filteredBooks.filter(book => book.publisher.toLowerCase().includes(filter.toLowerCase()));
-    }
-    
-    if (sort) {
-        const [criteria, order] = sort.split('-');
-        filteredBooks = filteredBooks.sort((a, b) => {
-            if (order === 'asc') {
-                return a[criteria] - b[criteria];
-            } else {
-                return b[criteria] - a[criteria];
-            }
-        });
-    }
-return (
-    <div className="child_childBox__I9yMt child_title__19SEz child_link__19Afq child_item__1sVuh child_childBox__I9yMt">
-      <Filters setFilter={setFilter} setSort={setSort} />
-      <ul>
-        {filteredBooks.map(book => <BookItem key={book.id} book={book} />)}
-      </ul>
-    </div>
-  );
-}
+    useEffect(() => {
+        const cachedBooks = localStorage.getItem('books');
+        if (cachedBooks) {
+            setFilteredBooks(JSON.parse(cachedBooks));
+        } else {
+            localStorage.setItem('books', JSON.stringify(books));
+        }
+    }, [books]);
+
+    return (
+        <div className='book-list'>
+            <div className="filters">
+                <select onChange={(e) => setSortType(e.target.value)}>
+                    <option value="">Sort By</option>
+                    <option value="rating">Rating</option>
+                    <option value="price">Price</option>
+                </select>
+                <select onChange={(e) => setFilterPublisher(e.target.value)}>
+                    <option value="">Filter by Publisher</option>
+                    <option value="Publisher1">Publisher1</option>
+                    <option value="Publisher2">Publisher2</option>
+                </select>
+            </div>
+            {filteredBooks.map(book => (
+                <Link to={`/book/${book.id}`} key={book.id} className='book-item'>
+                    <img src={book.coverUri} alt={book.title} className='book-cover' />
+                    <div className='book-title'>{book.title}</div>
+                    <div className='book-authors'>{book.authors.join(', ')}</div>
+                    <div className='book-price'>{book.price}</div>
+                    <div className='book-rating'>{book.rating}</div>
+                </Link>
+            ))}
+            <div className="loading">Loading...</div>
+            <div className="error">Error fetching data...</div>
+        </div>
+    );
+};
 
 export default BookList;
