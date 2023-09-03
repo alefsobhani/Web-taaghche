@@ -1,29 +1,14 @@
-
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import './App.css';
-import MainPage from './components/MainPage';
-import BookDetails from './components/BookDetails';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BooksList from './components/BooksList';
 
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
-        <h1>Book App</h1>
-      </div>
       <Router>
-        <Switch>
-          <Route path="/book/:id">
-            <BookDetails />
-          </Route>
-          <Route path="/">
-            <MainPage />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<BooksList />} />
+        </Routes>
       </Router>
     </div>
   );

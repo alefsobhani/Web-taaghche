@@ -1,1 +1,455 @@
-{'books': [{'id': 1, 'coverUri': 'https://example.com/cover1.jpg', 'title': 'Book Title 1', 'authors': ['Author 1'], 'price': '10$', 'rating': 4, 'publisher': 'Publisher 1', 'physicalPrice': '15$', 'numberOfPages': 200, 'description': 'This is a sample description for Book Title 1.', 'url': 'https://taaghche.com/book/1'}, {'id': 2, 'coverUri': 'https://example.com/cover2.jpg', 'title': 'Book Title 2', 'authors': ['Author 2', 'Author 3'], 'price': '20$', 'rating': 5, 'publisher': 'Publisher 2', 'physicalPrice': '25$', 'numberOfPages': 300, 'description': 'This is a sample description for Book Title 2.', 'url': 'https://taaghche.com/book/2'}, {'id': 3, 'coverUri': 'https://example.com/cover3.jpg', 'title': 'Book Title 3', 'authors': ['Author 3'], 'price': '30$', 'rating': 4, 'publisher': 'Publisher 0', 'physicalPrice': '45$', 'numberOfPages': 300, 'description': 'This is a sample description for Book Title 3.', 'url': 'https://taaghche.com/book/3'}, {'id': 4, 'coverUri': 'https://example.com/cover4.jpg', 'title': 'Book Title 4', 'authors': ['Author 4'], 'price': '40$', 'rating': 5, 'publisher': 'Publisher 1', 'physicalPrice': '60$', 'numberOfPages': 400, 'description': 'This is a sample description for Book Title 4.', 'url': 'https://taaghche.com/book/4'}, {'id': 5, 'coverUri': 'https://example.com/cover5.jpg', 'title': 'Book Title 5', 'authors': ['Author 5'], 'price': '50$', 'rating': 1, 'publisher': 'Publisher 2', 'physicalPrice': '75$', 'numberOfPages': 500, 'description': 'This is a sample description for Book Title 5.', 'url': 'https://taaghche.com/book/5'}, {'id': 6, 'coverUri': 'https://example.com/cover6.jpg', 'title': 'Book Title 6', 'authors': ['Author 6'], 'price': '60$', 'rating': 2, 'publisher': 'Publisher 0', 'physicalPrice': '90$', 'numberOfPages': 600, 'description': 'This is a sample description for Book Title 6.', 'url': 'https://taaghche.com/book/6'}, {'id': 7, 'coverUri': 'https://example.com/cover7.jpg', 'title': 'Book Title 7', 'authors': ['Author 7'], 'price': '70$', 'rating': 3, 'publisher': 'Publisher 1', 'physicalPrice': '105$', 'numberOfPages': 700, 'description': 'This is a sample description for Book Title 7.', 'url': 'https://taaghche.com/book/7'}, {'id': 8, 'coverUri': 'https://example.com/cover8.jpg', 'title': 'Book Title 8', 'authors': ['Author 8'], 'price': '80$', 'rating': 4, 'publisher': 'Publisher 2', 'physicalPrice': '120$', 'numberOfPages': 800, 'description': 'This is a sample description for Book Title 8.', 'url': 'https://taaghche.com/book/8'}, {'id': 9, 'coverUri': 'https://example.com/cover9.jpg', 'title': 'Book Title 9', 'authors': ['Author 9'], 'price': '90$', 'rating': 5, 'publisher': 'Publisher 0', 'physicalPrice': '135$', 'numberOfPages': 900, 'description': 'This is a sample description for Book Title 9.', 'url': 'https://taaghche.com/book/9'}, {'id': 10, 'coverUri': 'https://example.com/cover10.jpg', 'title': 'Book Title 10', 'authors': ['Author 10'], 'price': '100$', 'rating': 1, 'publisher': 'Publisher 1', 'physicalPrice': '150$', 'numberOfPages': 1000, 'description': 'This is a sample description for Book Title 10.', 'url': 'https://taaghche.com/book/10'}, {'id': 11, 'coverUri': 'https://example.com/cover11.jpg', 'title': 'Book Title 11', 'authors': ['Author 11'], 'price': '110$', 'rating': 2, 'publisher': 'Publisher 2', 'physicalPrice': '165$', 'numberOfPages': 1100, 'description': 'This is a sample description for Book Title 11.', 'url': 'https://taaghche.com/book/11'}, {'id': 12, 'coverUri': 'https://example.com/cover12.jpg', 'title': 'Book Title 12', 'authors': ['Author 12'], 'price': '120$', 'rating': 3, 'publisher': 'Publisher 0', 'physicalPrice': '180$', 'numberOfPages': 1200, 'description': 'This is a sample description for Book Title 12.', 'url': 'https://taaghche.com/book/12'}, {'id': 13, 'coverUri': 'https://example.com/cover13.jpg', 'title': 'Book Title 13', 'authors': ['Author 13'], 'price': '130$', 'rating': 4, 'publisher': 'Publisher 1', 'physicalPrice': '195$', 'numberOfPages': 1300, 'description': 'This is a sample description for Book Title 13.', 'url': 'https://taaghche.com/book/13'}, {'id': 14, 'coverUri': 'https://example.com/cover14.jpg', 'title': 'Book Title 14', 'authors': ['Author 14'], 'price': '140$', 'rating': 5, 'publisher': 'Publisher 2', 'physicalPrice': '210$', 'numberOfPages': 1400, 'description': 'This is a sample description for Book Title 14.', 'url': 'https://taaghche.com/book/14'}, {'id': 15, 'coverUri': 'https://example.com/cover15.jpg', 'title': 'Book Title 15', 'authors': ['Author 15'], 'price': '150$', 'rating': 1, 'publisher': 'Publisher 0', 'physicalPrice': '225$', 'numberOfPages': 1500, 'description': 'This is a sample description for Book Title 15.', 'url': 'https://taaghche.com/book/15'}, {'id': 16, 'coverUri': 'https://example.com/cover16.jpg', 'title': 'Book Title 16', 'authors': ['Author 16'], 'price': '160$', 'rating': 2, 'publisher': 'Publisher 1', 'physicalPrice': '240$', 'numberOfPages': 1600, 'description': 'This is a sample description for Book Title 16.', 'url': 'https://taaghche.com/book/16'}, {'id': 17, 'coverUri': 'https://example.com/cover17.jpg', 'title': 'Book Title 17', 'authors': ['Author 17'], 'price': '170$', 'rating': 3, 'publisher': 'Publisher 2', 'physicalPrice': '255$', 'numberOfPages': 1700, 'description': 'This is a sample description for Book Title 17.', 'url': 'https://taaghche.com/book/17'}, {'id': 18, 'coverUri': 'https://example.com/cover18.jpg', 'title': 'Book Title 18', 'authors': ['Author 18'], 'price': '180$', 'rating': 4, 'publisher': 'Publisher 0', 'physicalPrice': '270$', 'numberOfPages': 1800, 'description': 'This is a sample description for Book Title 18.', 'url': 'https://taaghche.com/book/18'}, {'id': 19, 'coverUri': 'https://example.com/cover19.jpg', 'title': 'Book Title 19', 'authors': ['Author 19'], 'price': '190$', 'rating': 5, 'publisher': 'Publisher 1', 'physicalPrice': '285$', 'numberOfPages': 1900, 'description': 'This is a sample description for Book Title 19.', 'url': 'https://taaghche.com/book/19'}, {'id': 20, 'coverUri': 'https://example.com/cover20.jpg', 'title': 'Book Title 20', 'authors': ['Author 20'], 'price': '200$', 'rating': 1, 'publisher': 'Publisher 2', 'physicalPrice': '300$', 'numberOfPages': 2000, 'description': 'This is a sample description for Book Title 20.', 'url': 'https://taaghche.com/book/20'}]}
+{
+    "books": [
+        {
+            "id": 1,
+            "coverUri": "assets/106649.jpg",
+            "title": "Book Title 1",
+            "authors": [
+                "Author 1"
+            ],
+            "price": "10$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "15$",
+            "numberOfPages": 200,
+            "description": "This is a sample description for Book Title 1.",
+            "url": "https://taaghche.com/book/1"
+        },
+        {
+            "id": 2,
+            "coverUri": "assets/116991.jpg",
+            "title": "Book Title 2",
+            "authors": [
+                "Author 2",
+                "Author 3"
+            ],
+            "price": "20$",
+            "rating": 5,
+            "publisher": "Publisher 2",
+            "physicalPrice": "25$",
+            "numberOfPages": 300,
+            "description": "This is a sample description for Book Title 2.",
+            "url": "https://taaghche.com/book/2"
+        },
+        {
+            "id": 3,
+            "coverUri": "assets/122010.jpg",
+            "title": "Book Title 3",
+            "authors": [
+                "Author 3"
+            ],
+            "price": "30$",
+            "rating": 4,
+            "publisher": "Publisher 0",
+            "physicalPrice": "45$",
+            "numberOfPages": 300,
+            "description": "This is a sample description for Book Title 3.",
+            "url": "https://taaghche.com/book/3"
+        },
+        {
+            "id": 20,
+            "coverUri": "https://example.com/cover20.jpg",
+            "title": "Book Title 20",
+            "authors": [
+                "Author 20"
+            ],
+            "price": "200$",
+            "rating": 1,
+            "publisher": "Publisher 2",
+            "physicalPrice": "300$",
+            "numberOfPages": 2000,
+            "description": "This is a sample description for Book Title 20.",
+            "url": "https://taaghche.com/book/20"
+        },
+        {
+            "id": 5,
+            "coverUri": "assets/84690.jpg",
+            "title": "Book Title 5",
+            "authors": [
+                "Author 5"
+            ],
+            "price": "50$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "75$",
+            "numberOfPages": 500,
+            "description": "This is a sample description for Book Title 5.",
+            "url": "https://taaghche.com/book/5"
+        },
+        {
+            "id": 6,
+            "coverUri": "https://example.com/cover6.jpg",
+            "title": "Book Title 6",
+            "authors": [
+                "Author 6"
+            ],
+            "price": "60$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "90$",
+            "numberOfPages": 600,
+            "description": "This is a sample description for Book Title 6.",
+            "url": "https://taaghche.com/book/6"
+        },
+        {
+            "id": 7,
+            "coverUri": "https://example.com/cover7.jpg",
+            "title": "Book Title 7",
+            "authors": [
+                "Author 7"
+            ],
+            "price": "70$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "105$",
+            "numberOfPages": 700,
+            "description": "This is a sample description for Book Title 7.",
+            "url": "https://taaghche.com/book/7"
+        },
+        {
+            "id": 8,
+            "coverUri": "https://example.com/cover8.jpg",
+            "title": "Book Title 8",
+            "authors": [
+                "Author 8"
+            ],
+            "price": "80$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "120$",
+            "numberOfPages": 800,
+            "description": "This is a sample description for Book Title 8.",
+            "url": "https://taaghche.com/book/8"
+        },
+        {
+            "id": 9,
+            "coverUri": "https://example.com/cover9.jpg",
+            "title": "Book Title 9",
+            "authors": [
+                "Author 9"
+            ],
+            "price": "90$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "135$",
+            "numberOfPages": 900,
+            "description": "This is a sample description for Book Title 9.",
+            "url": "https://taaghche.com/book/9"
+        },
+        {
+            "id": 10,
+            "coverUri": "https://example.com/cover10.jpg",
+            "title": "Book Title 10",
+            "authors": [
+                "Author 10"
+            ],
+            "price": "100$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "150$",
+            "numberOfPages": 1000,
+            "description": "This is a sample description for Book Title 10.",
+            "url": "https://taaghche.com/book/10"
+        },
+        {
+            "id": 11,
+            "coverUri": "https://example.com/cover11.jpg",
+            "title": "Book Title 11",
+            "authors": [
+                "Author 11"
+            ],
+            "price": "110$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "165$",
+            "numberOfPages": 1100,
+            "description": "This is a sample description for Book Title 11.",
+            "url": "https://taaghche.com/book/11"
+        },
+        {
+            "id": 12,
+            "coverUri": "https://example.com/cover12.jpg",
+            "title": "Book Title 12",
+            "authors": [
+                "Author 12"
+            ],
+            "price": "120$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "180$",
+            "numberOfPages": 1200,
+            "description": "This is a sample description for Book Title 12.",
+            "url": "https://taaghche.com/book/12"
+        },
+        {
+            "id": 13,
+            "coverUri": "https://example.com/cover13.jpg",
+            "title": "Book Title 13",
+            "authors": [
+                "Author 13"
+            ],
+            "price": "130$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "195$",
+            "numberOfPages": 1300,
+            "description": "This is a sample description for Book Title 13.",
+            "url": "https://taaghche.com/book/13"
+        },
+        {
+            "id": 14,
+            "coverUri": "https://example.com/cover14.jpg",
+            "title": "Book Title 14",
+            "authors": [
+                "Author 14"
+            ],
+            "price": "140$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "210$",
+            "numberOfPages": 1400,
+            "description": "This is a sample description for Book Title 14.",
+            "url": "https://taaghche.com/book/14"
+        },
+        {
+            "id": 15,
+            "coverUri": "https://example.com/cover15.jpg",
+            "title": "Book Title 15",
+            "authors": [
+                "Author 15"
+            ],
+            "price": "150$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "225$",
+            "numberOfPages": 1500,
+            "description": "This is a sample description for Book Title 15.",
+            "url": "https://taaghche.com/book/15"
+        },
+        {
+            "id": 16,
+            "coverUri": "https://example.com/cover16.jpg",
+            "title": "Book Title 16",
+            "authors": [
+                "Author 16"
+            ],
+            "price": "160$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "240$",
+            "numberOfPages": 1600,
+            "description": "This is a sample description for Book Title 16.",
+            "url": "https://taaghche.com/book/16"
+        },
+        {
+            "id": 17,
+            "coverUri": "https://example.com/cover17.jpg",
+            "title": "Book Title 17",
+            "authors": [
+                "Author 17"
+            ],
+            "price": "170$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "255$",
+            "numberOfPages": 1700,
+            "description": "This is a sample description for Book Title 17.",
+            "url": "https://taaghche.com/book/17"
+        },
+        {
+            "id": 18,
+            "coverUri": "https://example.com/cover18.jpg",
+            "title": "Book Title 18",
+            "authors": [
+                "Author 18"
+            ],
+            "price": "180$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "270$",
+            "numberOfPages": 1800,
+            "description": "This is a sample description for Book Title 18.",
+            "url": "https://taaghche.com/book/18"
+        },
+        {
+            "id": 19,
+            "coverUri": "https://example.com/cover19.jpg",
+            "title": "Book Title 19",
+            "authors": [
+                "Author 19"
+            ],
+            "price": "190$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "285$",
+            "numberOfPages": 1900,
+            "description": "This is a sample description for Book Title 19.",
+            "url": "https://taaghche.com/book/19"
+        },
+        {
+            "id": 20,
+            "coverUri": "https://example.com/cover20.jpg",
+            "title": "Book Title 20",
+            "authors": [
+                "Author 20"
+            ],
+            "price": "200$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "300$",
+            "numberOfPages": 2000,
+            "description": "This is a sample description for Book Title 20.",
+            "url": "https://taaghche.com/book/20"
+        },
+        {
+            "id": 21,
+            "coverUri": "https://example.com/cover21.jpg",
+            "title": "Book Title 21",
+            "authors": [
+                "Author 21"
+            ],
+            "price": "210$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "315$",
+            "numberOfPages": 2100,
+            "description": "This is a sample description for Book Title 21.",
+            "url": "https://taaghche.com/book/21"
+        },
+        {
+            "id": 22,
+            "coverUri": "https://example.com/cover22.jpg",
+            "title": "Book Title 22",
+            "authors": [
+                "Author 22"
+            ],
+            "price": "220$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "330$",
+            "numberOfPages": 2200,
+            "description": "This is a sample description for Book Title 22.",
+            "url": "https://taaghche.com/book/22"
+        },
+        {
+            "id": 23,
+            "coverUri": "https://example.com/cover23.jpg",
+            "title": "Book Title 23",
+            "authors": [
+                "Author 23"
+            ],
+            "price": "230$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "345$",
+            "numberOfPages": 2300,
+            "description": "This is a sample description for Book Title 23.",
+            "url": "https://taaghche.com/book/23"
+        },
+        {
+            "id": 24,
+            "coverUri": "https://example.com/cover24.jpg",
+            "title": "Book Title 24",
+            "authors": [
+                "Author 24"
+            ],
+            "price": "240$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "360$",
+            "numberOfPages": 2400,
+            "description": "This is a sample description for Book Title 24.",
+            "url": "https://taaghche.com/book/24"
+        },
+        {
+            "id": 25,
+            "coverUri": "https://example.com/cover25.jpg",
+            "title": "Book Title 25",
+            "authors": [
+                "Author 25"
+            ],
+            "price": "250$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "375$",
+            "numberOfPages": 2500,
+            "description": "This is a sample description for Book Title 25.",
+            "url": "https://taaghche.com/book/25"
+        },
+        {
+            "id": 26,
+            "coverUri": "https://example.com/cover26.jpg",
+            "title": "Book Title 26",
+            "authors": [
+                "Author 26"
+            ],
+            "price": "260$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "390$",
+            "numberOfPages": 2600,
+            "description": "This is a sample description for Book Title 26.",
+            "url": "https://taaghche.com/book/26"
+        },
+        {
+            "id": 27,
+            "coverUri": "https://example.com/cover27.jpg",
+            "title": "Book Title 27",
+            "authors": [
+                "Author 27"
+            ],
+            "price": "270$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "405$",
+            "numberOfPages": 2700,
+            "description": "This is a sample description for Book Title 27.",
+            "url": "https://taaghche.com/book/27"
+        },
+        {
+            "id": 28,
+            "coverUri": "https://example.com/cover28.jpg",
+            "title": "Book Title 28",
+            "authors": [
+                "Author 28"
+            ],
+            "price": "280$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "420$",
+            "numberOfPages": 2800,
+            "description": "This is a sample description for Book Title 28.",
+            "url": "https://taaghche.com/book/28"
+        },
+        {
+            "id": 29,
+            "coverUri": "https://example.com/cover29.jpg",
+            "title": "Book Title 29",
+            "authors": [
+                "Author 29"
+            ],
+            "price": "290$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "435$",
+            "numberOfPages": 2900,
+            "description": "This is a sample description for Book Title 29.",
+            "url": "https://taaghche.com/book/29"
+        },
+        {
+            "id": 30,
+            "coverUri": "https://example.com/cover30.jpg",
+            "title": "Book Title 30",
+            "authors": [
+                "Author 30"
+            ],
+            "price": "300$",
+            "rating": 4,
+            "publisher": "Publisher 1",
+            "physicalPrice": "450$",
+            "numberOfPages": 3000,
+            "description": "This is a sample description for Book Title 30.",
+            "url": "https://taaghche.com/book/30"
+        }
+    ]
+}

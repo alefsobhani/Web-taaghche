@@ -11,6 +11,8 @@ body {
 }
 
 .book-item {
+    flex-direction: column;
+
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -21,6 +23,10 @@ body {
 }
 
 .book-cover {
+    margin: 0 auto 15px auto;
+    width: 150px;
+    height: 225px;
+
     width: 60px;
     height: 90px;
     object-fit: cover;
@@ -28,6 +34,9 @@ body {
 }
 
 .book-details {
+    text-align: center;
+    padding-top: 15px;
+
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -35,6 +44,10 @@ body {
 }
 
 .book-details .book-cover {
+    margin: 0 auto 15px auto;
+    width: 150px;
+    height: 225px;
+
     width: 120px;
     height: 180px;
     margin: 0 auto 20px auto;
@@ -43,11 +56,253 @@ body {
 
 @media (max-width: 768px) {
     .book-item {
+    flex-direction: column;
+
         flex-direction: column;
         text-align: center;
     }
 
     .book-cover {
+    margin: 0 auto 15px auto;
+    width: 150px;
+    height: 225px;
+
         margin: 0 auto 15px auto;
     }
+}
+
+.filter-section, .sort-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filter-section input, .sort-section button {
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sort-section button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.book-loader {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .book {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book img {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .filter-section, .sort-section {
+        flex-direction: column;
+    }
+
+    .filter-section input, .sort-section button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .book img {
+        width: 50%;
+    }
+}
+
+
+.books-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book-item {
+    flex-direction: column;
+
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.book-cover {
+    margin: 0 auto 15px auto;
+    width: 150px;
+    height: 225px;
+
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.loading, .error {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.error {
+    color: red;
+}
+
+body{
+    background-color: blueviolet;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.circle-cont{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.circle-cont:after{
+    content: "";
+    background-color: #000;
+    width: 20px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    opacity: 0.4;
+    animation: shadow 2s linear infinite;
+}
+.circle-cont:nth-child(2):after{
+    animation-delay: -.2s;
+}
+.circle-cont:nth-child(3):after{
+    animation-delay: -.4s;
+}
+.circle-cont:nth-child(4):after{
+    animation-delay: -.6s;
+}
+.circel{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: anim 2s linear infinite;
+}
+.circle-cont:nth-child(2) .circel{
+    animation-delay: -0.2s;
+}
+.circle-cont:nth-child(3) .circel{
+    animation-delay: -0.4s;
+}
+.circle-cont:nth-child(4) .circel{
+    animation-delay: -0.6s;
+}
+@keyframes anim{
+    0%{transform-origin: 800%  50%;transform: rotate(0deg);}
+    50%{transform-origin: 800%  50%;transform: rotate(360deg);}
+    50.1%{transform-origin: -600%  50%;transform: rotate(0deg);}
+    100%{transform-origin: -600%  50%;transform: rotate(-360deg);}
+}
+@keyframes shadow{
+    0%{}
+    12.5%{transform: translate(100px) scale(0.6);}
+    25%{transform: translate(220px);}
+    37.5%{transform: translate(100px)scale(1.4);}
+    50%{transform: translate(0px);}
+    62.5%{transform: translate(-100px)scale(0.6);}
+    75%{transform: translate(-220px);}
+    87.5%{transform: translate(-100px)scale(1.4);}
+   }
+.book-detail {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.book-detail img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book-detail a {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.book-detail a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.filter-section {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-section input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.filter-section button {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-section button:hover {
+    background-color: #0056b3;
 }

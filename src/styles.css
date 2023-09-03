@@ -1,13 +1,16 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url("../assets/Screenshot_20230831_021019_Samsung Internet.jpg");
+    background-image: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .book-item, .book-details {
+    text-align: center;
+    padding-top: 15px;
+
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin: 20px;
@@ -23,6 +26,9 @@ body {
 
 @media only screen and (max-width: 600px) {
     .book-item, .book-details {
+    text-align: center;
+    padding-top: 15px;
+
         margin: 10px;
         padding: 10px;
     }

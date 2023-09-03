@@ -1,17 +1,25 @@
-# Web-taaghche
 
-پروژه‌ای برای نمایش کتاب‌ها با استفاده از فریم‌ورک ReactJS.
+# Book App
 
-## مقدمه
+This is a simple React application to display books and their details.
 
-`Web-taaghche` یک پلتفرم فرانت‌اند است که با استفاده از ReactJS طراحی شده‌است. این پروژه به کاربر امکان مشاهده و انتخاب کتاب‌های مختلف را می‌دهد.
+## Running the Project
 
-## ساختار و اجزاء پروژه
+1. Install the dependencies:
 
-- `App.js`: نقطه شروع و ورودی اصلی برنامه که تمامی اجزاء React را به هم متصل می‌کند.
-- `combined_responsive_styles.css`: استایل‌های مرتبط با طراحی پاسخ‌گو برای مختلف دستگاه‌ها و اندازه‌های صفحه‌نمایش.
-- `responsive_design_template.css`: الگوی کلی استایل‌های پاسخ‌گو به منظور ایجاد یک ظاهر یکنواخت در تمامی قسمت‌های وب‌سایت.
-- `components`: این پوشه شامل تمامی اجزاء React است که برای ساخت ویژگی‌های مختلف وب‌سایت استفاده شده‌اند.
-- `package.json`: فایلی که وابستگی‌ها، اسکریپت‌ها و اطلاعات پروژه را مشخص می‌کند.
-- `package-lock.json`: یک نمایه دقیق از وابستگی‌های نصب شده است که اطمینان می‌دهد همه توسعه‌دهندگان از یک نسخه مشخص از وابستگی‌ها استفاده می‌کنند.
+```bash
+npm install
+```
 
+2. Start the development server:
+
+```bash
+npm start
+```
+
+The application should open in your default browser and be accessible at `http://localhost:3000`.
+
+## Features
+
+- View a list of books
+- View detailed information about each book
