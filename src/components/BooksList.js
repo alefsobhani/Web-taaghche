@@ -120,7 +120,7 @@ const BooksList = () => {
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
           />
-          <button className="btn btn-primary" onClick={handleClearFilter}>Clear Filter</button>
+          <button className="btn btn-primary formats_formats__23Hla formats_download__vphPW" onClick={handleClearFilter}>Clear Filter</button>
         </div>
         <div id="books-list-container" className="books-list" onScroll={handleScroll}>
           {filteredBooks.slice(0, visibleBooksCount).map(book => (
